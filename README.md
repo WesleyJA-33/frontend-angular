@@ -30,14 +30,13 @@ Certifique-se de ter as seguintes ferramentas instaladas:
 ### Instalação
 
 1.  **Clone o repositório:**
-    ```No CMD
-    git clone [https://github.com/seu-usuario/nome-do-repositorio-frontend.git](https://github.com/seu-usuario/nome-do-repositorio-frontend.git)
-    cd nome-do-repositorio-frontend
+    ```bash
+    git clone https://github.com/WesleyJA-33/frontend-angular.git frontend
+    cd frontend
     ```
-    (Substitua `seu-usuario` e `nome-do-repositorio-frontend` pelos seus dados)
 
 2.  **Instale as dependências:**
-    ```No CMD
+    ```bash
     npm install
     # ou yarn install
     ```
@@ -46,5 +45,5 @@ Certifique-se de ter as seguintes ferramentas instaladas:
 
 Para iniciar o servidor de desenvolvimento do Angular:
 
-```No CMD
+```bash
 ng serve --open
