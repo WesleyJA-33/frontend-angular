@@ -1,0 +1,53 @@
+.user-table-container {
+  margin: 20px auto;
+  width: 90%; /* Aumentei um pouco para melhor visualização */
+  max-width: 1200px;
+  overflow-x: auto; /* Para rolagem em telas menores */
+}
+
+.user-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+  box-shadow: 0 4px 12px rgba(255, 1, 1, 0.174); /* Sombra mais suave */
+  border-radius: 8px; /* Cantos arredondados */
+  overflow: hidden; /* Garante que os cantos arredondados sejam aplicados */
+}
+
+.user-table th, .user-table td {
+  border: 1px solid #e0e0e0; /* Cor da borda mais clara */
+  padding: 15px; /* Mais padding (largura da linha) */
+  text-align: left;
+  font-size: 1.0em; /* Fonte um pouco maior */
+}
+
+.user-table th {
+  background-color: #ff0000; /* Vermelho para cabeçalho */
+  color: white;
+  font-weight: bold;
+  text-transform: uppercase; /* Texto em maiúsculas */
+}
+
+.user-table tr:nth-child(even) {
+  background-color: #f8f9fa; /* Listras zebradas */
+}
+
+.user-table tr:hover {
+  background-color: #f24f4f6e; /* Fundo vermelho claro ao passar o mouse */
+  cursor: pointer;
+}
+
+h1 {
+  color: #333;
+  margin-top: 40px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.user-table a {
+    color: #ff0000; /* Cor da letra do link do Website */
+    text-decoration: none;
+}
+
+.user-table a:hover {
+    text-decoration: underline;
+}

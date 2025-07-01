@@ -1,0 +1,33 @@
+<div style="text-align:center; margin-top: 20px;">
+  <h1>{{ title }}</h1>
+</div>
+
+<div class="user-table-container">
+  <table class="user-table">
+    <thead>
+      <tr>
+        <th>ID</th>
+        <th>Nome</th>
+        <th>Nome de Usuário</th>
+        <th>Email</th>
+        <th>Cidade</th>
+        <th>Telefone</th>
+        <th>Website</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let user of users">
+        <td>{{ user.id }}</td>
+        <td>{{ user.name }}</td>
+        <td>{{ user.username }}</td>
+        <td>{{ user.email }}</td>
+        <td>{{ user.address.city }}</td>
+        <td>{{ user.phone }}</td>
+        <td><a href="http://{{ user.website }}" target="_blank">{{ user.website }}</a></td>
+      </tr>
+      <tr *ngIf="users.length === 0">
+        <td colspan="7">Carregando usuários ou nenhum usuário encontrado...</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
